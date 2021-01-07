@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.header-top {
+  background-color: #0282F9;
+}
+
+.header-top ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+.header-top ul li {
+  margin: 0 20px;
+  display: inline-block;
+}
+
+.header-top ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
