@@ -15,51 +15,57 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="header-bottom">
-      <div class="logo">
-        <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/logo.png" alt="">
-      </div>
-      <div class="main-menu">
-        <ul>
-          <li>
-            <a href="#">characters</a>
-          </li>
-          <li>
-            <a href="#">comics</a>
-          </li>
-          <li>
-            <a href="#">movies</a>
-          </li>
-          <li>
-            <a href="#">tv</a>
-          </li>
-          <li>
-            <a href="#">games</a>
-          </li>
-          <li>
-            <a href="#">collectibles</a>
-          </li>
-          <li>
-            <a href="#">videos</a>
-          </li>
-          <li>
-            <a href="#">fans</a>
-          </li>
-          <li>
-            <a href="#">news</a>
-          </li>
-          <li>
-            <a href="#">shop</a>
-          </li>
+  <div class="header-bottom">
+    <div class="container">
+      <div class="navbar">
 
-        </ul>
+        <div class="logo">
+          <a href="{{ route('homepage') }}">
+            <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/logo.png" alt="">
+
+          </a>
+        </div>
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a class="uppercase" href="#">characters</a>
+            </li>
+            <li>
+              <a class="uppercase" href="#">comics</a>
+            </li>
+            <li>
+              <a class="uppercase" href="#">movies</a>
+            </li>
+            <li>
+              <a class="uppercase" href="#">tv</a>
+            </li>
+            <li>
+              <a class="uppercase" href="#">games</a>
+            </li>
+            <li>
+              <a class="uppercase" href="#">collectibles</a>
+            </li>
+            <li>
+              <a class="uppercase" href="#">videos</a>
+            </li>
+            <li>
+              <a class="uppercase" href="#">fans</a>
+            </li>
+            <li>
+              <a class="uppercase" href="#">news</a>
+            </li>
+            <li>
+              <a class="uppercase" href="#">shop <span>▼</span></a>
+            </li>
+
+          </ul>
 
 
-      </div>
+        </div>
 
-      <div class="search">
-        <input type="text" name="" value="" placeholder="Search">
+        <div class="search">
+          <input type="text" name="" value="" placeholder="Search">
+        </div>
       </div>
     </div>
   </div>

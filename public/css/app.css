@@ -17,6 +17,11 @@ body {
   text-transform: uppercase;
 }
 
+.jumbo {
+  padding: 200px 0;
+  background-image: url("/dc-comics/images/jumbotron.jpg");
+}
+
 .header-top {
   background-color: #0282F9;
 }
@@ -40,11 +45,25 @@ body {
 .header-bottom {
   display: flex;
   justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.navbar {
+  display: flex;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+}
+
+.logo img {
+  width: 100%;
 }
 
 .main-menu {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -54,10 +73,27 @@ body {
 
 .main-menu ul li {
   display: inline-block;
+  margin: 20px;
+}
+
+.main-menu ul li:hover {
+  border-bottom: 2px solid #0282F9;
 }
 
 .main-menu ul li a {
+  color: black;
+  font-weight: bold;
   text-decoration: none;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.main-menu ul li a:hover {
+  color: #0282F9;
+}
+
+.main-menu ul li a span {
+  color: #0282F9;
 }
 
 .search {
@@ -68,5 +104,7 @@ body {
 
 .search input {
   text-align: right;
+  border: 0;
+  border-bottom: 2px solid #0282F9;
 }
 

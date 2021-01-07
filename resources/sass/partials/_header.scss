@@ -18,19 +18,45 @@
 .header-bottom{
   display: flex;
   justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.navbar{
+  display: flex;
+}
+
+.logo{
+  height: 80px;
+  width: 80px;
+  img{
+    width: 100%;
+  }
 }
 
 .main-menu{
   display: flex;
-  justify-content: center;
   align-items: center;
   ul{
     list-style-type: none;
     li{
       display: inline-block;
+      margin: 20px;
+      &:hover{
+        border-bottom: 2px solid $main_color;
+      }
       a{
+        color: black;
+        font-weight: bold;
         text-decoration: none;
-
+        font-size: 14px;
+        line-height: 21px;
+        &:hover{
+          color: $main_color
+        }
+        span{
+          color: $main_color
+        }
       }
     }
   }
@@ -42,6 +68,8 @@
   align-items: center;
   input{
     text-align: right;
+    border: 0;
+    border-bottom: 2px solid $main_color;
 
   }
 }
