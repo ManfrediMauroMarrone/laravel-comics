@@ -14,3 +14,34 @@
     }
   }
 }
+
+.header-bottom{
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul{
+    list-style-type: none;
+    li{
+      display: inline-block;
+      a{
+        text-decoration: none;
+
+      }
+    }
+  }
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input{
+    text-align: right;
+
+  }
+}

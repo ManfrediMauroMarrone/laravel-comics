@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .container {
   width: 1280px;
   margin: auto;
@@ -31,5 +35,38 @@
   text-decoration: none;
   color: white;
   font-size: 12px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-menu ul {
+  list-style-type: none;
+}
+
+.main-menu ul li {
+  display: inline-block;
+}
+
+.main-menu ul li a {
+  text-decoration: none;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input {
+  text-align: right;
 }
 
