@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+{{-- con extend collego il layout alle varie sezioni del mio sitom, in questo caso la homepage --}}
+@extends('layouts.app')
 
-        <title>DC comics</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    </head>
-    <body>
-        <h1>homepage</h1>
-    </body>
-</html>
+{{-- con section collego lo yield alla mia homepage in modo da poter inserire il contenuto --}}
+@section('content')
+<h1>homepage</h1>
+@endsection
