@@ -22,6 +22,15 @@ body {
   background-image: url("/dc-comics/images/jumbotron.jpg");
 }
 
+.section-title h2 {
+  background-color: #0282F9;
+  color: white;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
 .header-top {
   background-color: #0282F9;
 }
@@ -106,5 +115,35 @@ body {
   text-align: right;
   border: 0;
   border-bottom: 2px solid #0282F9;
+}
+
+#series {
+  background-color: #1C1C1C;
+  color: white;
+}
+
+#series .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#series .card-container .card {
+  flex-basis: 185px;
+}
+
+#series .card-container .card .comic-img {
+  height: 185px;
+  width: 185px;
+}
+
+#series .card-container .card .comic-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 

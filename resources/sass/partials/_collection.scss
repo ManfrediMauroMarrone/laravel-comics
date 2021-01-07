@@ -1,0 +1,24 @@
+#series{
+  background-color: $dark_section_color;
+  color: white;
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    .card{
+      flex-basis: 185px;
+      .comic-img{
+        height: 185px;
+        width: 185px;
+        img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: top;
+        }
+      }
+    }
+  }
+
+}

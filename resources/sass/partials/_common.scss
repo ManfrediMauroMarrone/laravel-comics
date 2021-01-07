@@ -21,3 +21,12 @@ body{
   padding: 200px 0;
   background-image: url('/dc-comics/images/jumbotron.jpg');
 }
+
+.section-title h2{
+  background-color: $main_color;
+  color: white;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
