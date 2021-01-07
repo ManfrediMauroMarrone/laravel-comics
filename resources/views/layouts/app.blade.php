@@ -6,24 +6,12 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   </head>
   <body>
-    <header>
-      <div class="header-top">
-
-      </div>
-      <div class="header-bottom">
-
-      </div>
-    </header>
+    {{-- con include inserisco in pagina i contenuti dei partials --}}
+    @include('partials.header')
     {{-- definisco uno yield che fa da placeholder per il contenuto --}}
     @yield('content')
 
-    <footer>
-      <div class="footer-top">
+    @include('partials.footer')
 
-      </div>
-      <div class="footer-bottom">
-
-      </div>
-    </footer>
   </body>
 </html>
