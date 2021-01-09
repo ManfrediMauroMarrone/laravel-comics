@@ -10,17 +10,20 @@
         <h2 class="uppercase">current series</h2>
       </div>
       <div class="card-container">
-        @foreach ($comics as $item)
+        @foreach ($comics as $key => $item)
           <div class="card">
-            <div class="comic-img">
-              <img src="{{ $item['thumb'] }}" alt="{{ $item['series'] }}">
+            {{-- popolo il parametro id del mio url con il valore di $key --}}
+            <a href="{{ route('comic-details', ['id' => $key]) }}">
+              <div class="comic-img">
+                <img src="{{ $item['thumb'] }}" alt="{{ $item['series'] }}">
 
-            </div>
-            <div class="comic-title">
-              <p class="uppercase">{{ $item['series'] }}</p>
+              </div>
+              <div class="comic-title">
+                <p class="uppercase">{{ $item['series'] }}</p>
 
-            </div>
+              </div>
 
+            </a>
           </div>
         @endforeach
 

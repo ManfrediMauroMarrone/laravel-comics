@@ -8,17 +8,26 @@
     padding: 20px;
     .card{
       flex-basis: 185px;
-      .comic-img{
-        height: 185px;
-        width: 185px;
-        img{
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-          object-position: top;
+      a{
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        .comic-img{
+          height: 185px;
+          width: 185px;
+          img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+          }
         }
       }
     }
   }
 
+}
+
+#blue-strip{
+  background-color: $main_color;
 }

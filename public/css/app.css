@@ -20,6 +20,7 @@ body {
 .jumbo {
   padding: 200px 0;
   background-image: url("/dc-comics/images/jumbotron.jpg");
+  background-size: cover;
 }
 
 .section-title h2 {
@@ -133,17 +134,27 @@ body {
   flex-basis: 185px;
 }
 
-#series .card-container .card .comic-img {
+#series .card-container .card a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+#series .card-container .card a .comic-img {
   height: 185px;
   width: 185px;
 }
 
-#series .card-container .card .comic-img img {
+#series .card-container .card a .comic-img img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+#blue-strip {
+  background-color: #0282F9;
 }
 
