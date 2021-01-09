@@ -30,4 +30,33 @@
 
 #blue-strip{
   background-color: $main_color;
+
+  .comic-thumb-container{
+    position: relative;
+    padding: 25px 0;
+    .comic-thumb-wrapper{
+      position: absolute;
+      bottom: 20px;
+      border: 1px solid white;
+      span:first-of-type{
+        position: absolute;
+        top: 0;
+        color: white;
+        background-color: $main_color;
+      }
+      span:last-of-type{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: white;
+        text-align: center;
+        background-color: $main_color;
+      }
+      img{
+        display: block;
+      }
+
+    }
+  }
 }

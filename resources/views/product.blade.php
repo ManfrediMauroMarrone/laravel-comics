@@ -5,7 +5,17 @@
 @section('content')
   @include('partials.jumbo')
   <section id="blue-strip">
-    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+    <div class="container">
+
+      <div class="comic-thumb-container">
+        <div class="comic-thumb-wrapper">
+          <span class="uppercase">{{ $comic['type'] }}</span>
+          <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+          <span class="uppercase">View Gallery</span>
+        </div>
+
+      </div>
+    </div>
   </section>
   <section id="">
     <div class="container">
