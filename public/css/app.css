@@ -127,6 +127,7 @@ body {
 #series {
   background-color: #1C1C1C;
   color: white;
+  padding-bottom: 50px;
 }
 
 #series .card-container {
@@ -158,6 +159,17 @@ body {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+#series .button-load {
+  text-align: center;
+}
+
+#series .button-load a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #0282F9;
 }
 
 #blue-strip {
@@ -416,6 +428,7 @@ footer .footer-bottom {
 
 footer .footer-bottom .footer-bottom-left {
   float: left;
+  width: 50%;
 }
 
 footer .footer-bottom .footer-bottom-left .button {
@@ -431,7 +444,8 @@ footer .footer-bottom .footer-bottom-left .button:hover {
 }
 
 footer .footer-bottom .footer-bottom-right {
-  float: right;
+  float: left;
+  width: 50%;
 }
 
 footer .footer-bottom .footer-bottom-right .social {
