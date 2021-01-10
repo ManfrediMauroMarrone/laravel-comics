@@ -60,3 +60,123 @@
     }
   }
 }
+
+#comic-main{
+  padding: 100px 0;
+  .comic-info{
+    float: left;
+    width: calc(100% / 3 * 2);
+    h1{
+      color: $title_color;
+      padding: 15px;
+    }
+    .comic-status{
+      display: flex;
+      align-items: center;
+      background-color: #55ba59;
+      border: 1px solid #357739;
+      .price{
+        flex-grow: 1;
+      }
+      .price, .availability, .check{
+        padding: 15px;
+      }
+      .availability{
+        border-right: 1px solid #357739;
+        color: #bafd9c;
+      }
+      .price, .check{
+        color: white;
+      }
+
+    }
+
+    .comic-description{
+      line-height: 2;
+      font-weight: 700;
+      margin-top: 30px;
+    }
+  }
+
+  .comic-adv{
+    float: left;
+    width: calc(100% /3);
+    text-align: right;
+    h5{
+      padding: 15px;
+    }
+  }
+}
+
+#comic-details{
+  padding: 20px 0;
+  background-color: #f6f6f6;
+  .talent, .specs{
+    width: calc(50% - #{ $column-spacing });
+    float: left;
+    h2{
+      color: $title_color;
+    }
+    ul{
+      list-style-type: none;
+      li{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-top: 1px solid #e3e3e3;
+        padding: 15px 0;
+        font-weight: 600;
+        .talent-info{
+          min-width: calc(100% / 3);
+          max-width: calc(100% / 3);
+          flex-grow: 1;
+        }
+        .talent-data{
+          flex-grow: 2;
+        }
+        a{
+          text-decoration: none;
+          color: $main_color;
+        }
+      }
+    }
+  }
+  .talent{
+    margin-right: 15px;
+  }
+  .talent{
+    margin-left: 15px;
+  }
+
+  .icon-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon-box{
+      flex-grow: 1;
+      a{
+        text-decoration: none;
+      }
+      .icon-box-img{
+        background-image: url('/dc-comics/images/cta-icons.png');
+        display: inline-block;
+        width: $icon_box_img_size;
+        height: $icon_box_img_size;
+
+      }
+
+      @for $i from 0 through 3{
+        &:nth-child(#{$i + 1}){
+          .icon-box-img{
+            background-position: $icon_box_img_size * $i 0;
+
+          }
+          &:hover .icon-box-img{
+            background-position: $icon_box_img_size * $i $icon_box_img_size;
+          }
+        }
+      }
+
+    }
+  }
+}

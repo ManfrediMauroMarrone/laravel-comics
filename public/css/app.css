@@ -13,6 +13,12 @@ body {
   margin: auto;
 }
 
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -188,5 +194,353 @@ body {
 
 #blue-strip .comic-thumb-container .comic-thumb-wrapper img {
   display: block;
+}
+
+#comic-main {
+  padding: 100px 0;
+}
+
+#comic-main .comic-info {
+  float: left;
+  width: calc(100% / 3 * 2);
+}
+
+#comic-main .comic-info h1 {
+  color: #003f5e;
+  padding: 15px;
+}
+
+#comic-main .comic-info .comic-status {
+  display: flex;
+  align-items: center;
+  background-color: #55ba59;
+  border: 1px solid #357739;
+}
+
+#comic-main .comic-info .comic-status .price {
+  flex-grow: 1;
+}
+
+#comic-main .comic-info .comic-status .price,
+#comic-main .comic-info .comic-status .availability,
+#comic-main .comic-info .comic-status .check {
+  padding: 15px;
+}
+
+#comic-main .comic-info .comic-status .availability {
+  border-right: 1px solid #357739;
+  color: #bafd9c;
+}
+
+#comic-main .comic-info .comic-status .price,
+#comic-main .comic-info .comic-status .check {
+  color: white;
+}
+
+#comic-main .comic-info .comic-description {
+  line-height: 2;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+#comic-main .comic-adv {
+  float: left;
+  width: calc(100% /3);
+  text-align: right;
+}
+
+#comic-main .comic-adv h5 {
+  padding: 15px;
+}
+
+#comic-details {
+  padding: 20px 0;
+  background-color: #f6f6f6;
+}
+
+#comic-details .talent,
+#comic-details .specs {
+  width: calc(50% - 15px);
+  float: left;
+}
+
+#comic-details .talent h2,
+#comic-details .specs h2 {
+  color: #003f5e;
+}
+
+#comic-details .talent ul,
+#comic-details .specs ul {
+  list-style-type: none;
+}
+
+#comic-details .talent ul li,
+#comic-details .specs ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top: 1px solid #e3e3e3;
+  padding: 15px 0;
+  font-weight: 600;
+}
+
+#comic-details .talent ul li .talent-info,
+#comic-details .specs ul li .talent-info {
+  min-width: calc(100% / 3);
+  max-width: calc(100% / 3);
+  flex-grow: 1;
+}
+
+#comic-details .talent ul li .talent-data,
+#comic-details .specs ul li .talent-data {
+  flex-grow: 2;
+}
+
+#comic-details .talent ul li a,
+#comic-details .specs ul li a {
+  text-decoration: none;
+  color: #0282F9;
+}
+
+#comic-details .talent {
+  margin-right: 15px;
+}
+
+#comic-details .talent {
+  margin-left: 15px;
+}
+
+#comic-details .icon-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#comic-details .icon-box-container .icon-box {
+  flex-grow: 1;
+}
+
+#comic-details .icon-box-container .icon-box a {
+  text-decoration: none;
+}
+
+#comic-details .icon-box-container .icon-box .icon-box-img {
+  background-image: url("/dc-comics/images/cta-icons.png");
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+}
+
+#comic-details .icon-box-container .icon-box:nth-child(1) .icon-box-img {
+  background-position: 0px 0;
+}
+
+#comic-details .icon-box-container .icon-box:nth-child(1):hover .icon-box-img {
+  background-position: 0px 37px;
+}
+
+#comic-details .icon-box-container .icon-box:nth-child(2) .icon-box-img {
+  background-position: 37px 0;
+}
+
+#comic-details .icon-box-container .icon-box:nth-child(2):hover .icon-box-img {
+  background-position: 37px 37px;
+}
+
+#comic-details .icon-box-container .icon-box:nth-child(3) .icon-box-img {
+  background-position: 74px 0;
+}
+
+#comic-details .icon-box-container .icon-box:nth-child(3):hover .icon-box-img {
+  background-position: 74px 37px;
+}
+
+#comic-details .icon-box-container .icon-box:nth-child(4) .icon-box-img {
+  background-position: 111px 0;
+}
+
+#comic-details .icon-box-container .icon-box:nth-child(4):hover .icon-box-img {
+  background-position: 111px 37px;
+}
+
+footer {
+  position: relative;
+  background-image: url("/dc-comics/images/footer-bg.jpg");
+  background-size: cover;
+}
+
+footer .footer-top-wrapper {
+  background-image: url("/dc-comics/images/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+footer .footer-top-wrapper .footer-top {
+  display: flex;
+}
+
+footer .footer-top-wrapper .footer-top .footer-top-menu {
+  margin-left: 15px;
+  padding: 20px 0;
+  color: white;
+}
+
+footer .footer-top-wrapper .footer-top .footer-top-menu ul {
+  margin-bottom: 15px;
+}
+
+footer .footer-top-wrapper .footer-top .footer-top-menu ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+footer .footer-top-wrapper .footer-top .footer-top-menu ul li a {
+  text-decoration: none;
+  color: grey;
+}
+
+footer .footer-top-wrapper .footer-top-terms {
+  padding: 20px 0;
+  color: grey;
+}
+
+footer .footer-top-wrapper .footer-top-terms a {
+  color: #0282F9;
+  text-decoration: none;
+}
+
+footer .footer-bottom {
+  background-color: #303030;
+  padding: 30px 0;
+}
+
+footer .footer-bottom .footer-bottom-left {
+  float: left;
+}
+
+footer .footer-bottom .footer-bottom-left .button {
+  padding: 10px;
+  border: 2px solid #0282F9;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s linear;
+}
+
+footer .footer-bottom .footer-bottom-left .button:hover {
+  background-color: #0282F9;
+}
+
+footer .footer-bottom .footer-bottom-right {
+  float: right;
+}
+
+footer .footer-bottom .footer-bottom-right .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .footer-bottom .footer-bottom-right .social .social-title {
+  color: #0282F9;
+  margin: 0 15px 0 0;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul {
+  list-style-type: none;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(1) {
+  background-image: url("/dc-comics/images/footer-facebook.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(1):hover {
+  opacity: 0.8;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(1) a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(2) {
+  background-image: url("/dc-comics/images/footer-twitter.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(2):hover {
+  opacity: 0.8;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(2) a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(3) {
+  background-image: url("/dc-comics/images/footer-youtube.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(3):hover {
+  opacity: 0.8;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(3) a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(4) {
+  background-image: url("/dc-comics/images/footer-pinterest.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(4):hover {
+  opacity: 0.8;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(4) a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(5) {
+  background-image: url("/dc-comics/images/footer-periscope.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(5):hover {
+  opacity: 0.8;
+}
+
+footer .footer-bottom .footer-bottom-right .social ul li:nth-child(5) a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+footer .dc-logo {
+  position: absolute;
+  top: 0;
 }
 

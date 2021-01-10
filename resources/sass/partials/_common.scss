@@ -13,6 +13,12 @@ body{
   margin: auto;
 }
 
+.container::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .uppercase{
   text-transform: uppercase;
 }
